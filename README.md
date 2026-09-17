@@ -1,3 +1,4 @@
+
 # Frontend Practice
 
 Учебный frontend-проект для практических и контрольных работ.
@@ -21,6 +22,6 @@
 - Git
 - GitHub
 
-## Ссылка на сайт
+## Ссылка на сайт.
 
-Ссылка на опубликованный сайт будет добавлена после настройки GitHub Pages.
+https://vladiworld2007-droid.github.io/frontend-practice/
