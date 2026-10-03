@@ -138,6 +138,16 @@ footer {
     background-color: var(--color-white);
 }
 
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+
+.catalog .product-card {
+    margin-bottom: 0;
+}
+
 .product-card:hover {
     border-color: var(--color-primary);
 }
