@@ -1,207 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Practice</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Наушники, аксессуары и умные устройства. Выбирайте технику для учёбы, работы и отдыха.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ТехноЛавка — техника для жизни">
+  <meta property="og:description" content="Наушники, аксессуары и умные устройства. Выбирайте технику для учёбы, работы и отдыха.">
+  <meta property="og:url" content="https://vladiworld2007-droid.github.io/frontend-practice/">
+  <meta property="og:image" content="https://vladiworld2007-droid.github.io/frontend-practice/images/og-cover.svg">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>ТехноЛавка — техника для жизни</title>
+  <link rel="icon" href="images/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
-
 <body>
-
-    <header>
-        <div class="site-header">
-            <a class="site-logo" href="index.html">Frontend Practice</a>
-
-            <nav class="site-nav" aria-label="Основная навигация">
-                <ul class="site-nav__list">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="pages/about.html">О проекте</a></li>
-                    <li><a href="#popular">Популярные товары</a></li>
-                    <li><a href="#advantages">Преимущества</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-
-        <section class="hero">
-            <h1>Учебный frontend-проект</h1>
-
-            <p>
-                Проект создан для практического изучения HTML, CSS, Git,
-                GitHub, Pull Request и GitHub Pages.
-            </p>
-
-            <p>
-                В дальнейшем на его основе будет разработан многостраничный сайт
-                интернет-магазина или каталога услуг.
-            </p>
-
-            <a class="button" href="#popular">Перейти к товарам</a>
-        </section>
-
-        <section class="section" id="advantages">
-            <h2>Преимущества проекта</h2>
-
-            <ul class="advantages-list">
-                <li>понятная HTML-структура;</li>
-                <li>семантические блоки страницы;</li>
-                <li>подключение внешнего CSS-файла;</li>
-                <li>подготовка к разработке многостраничного сайта.</li>
-            </ul>
-        </section>
-
-        <section class="section" id="popular">
-            <h2>Популярные товары</h2>
-
-            <article class="product-card">
-    <h3>Товар 1</h3>
-    <p>Краткое описание учебного товара.</p>
-    <p>Цена: 1000 руб.</p>
-    <button class="button order-button" type="button" data-product="Товар 1">
-    Заказать
-</button>
-</article>
-
-<article class="product-card">
-    <h3>Товар 2</h3>
-    <p>Краткое описание учебного товара.</p>
-    <p>Цена: 1500 руб.</p>
-    <button class="button order-button" type="button" data-product="Товар 2">
-    Заказать
-</button>
-</article>
-
-<article class="product-card">
-    <h3>Товар 3</h3>
-    <p>Краткое описание учебного товара.</p>
-    <p>Цена: 2000 руб.</p>
-   <button class="button order-button" type="button" data-product="Товар 3">
-    Заказать
-</button>
-</article>
-        </section>
-
-        <aside class="aside-info">
-            <h2>Информация для студентов</h2>
-
-            <p>
-                На следующих практических занятиях проект будет расширяться:
-                появятся формы, модальное окно, дополнительные страницы,
-                Flex/Grid, БЭМ-структура и адаптивная версия сайта.
-            </p>
-        </aside>
-
-    </main>
-
-    <footer id="contacts">
-        <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-        <p>Автор: Владимир Бережной</p>
-        <p>Дисциплина: Фронтенд и бэкенд разработка</p>
-    </footer>
+<a class="skip-link" href="#main-content">Перейти к содержимому</a>
+<header class="site-header"><div class="site-header__inner container">
+  <a class="site-logo" href="index.html" aria-label="ТехноЛавка — главная"><span class="site-logo__mark" aria-hidden="true">Т</span><span class="site-logo__text">Техно<span>Лавка</span></span></a>
+  <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li><li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярное</a></li><li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li><li class="site-nav__item"><a class="site-nav__link" href="pages/about.html">О магазине</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
+  <a class="button button--small button--primary site-header__action" href="order.html">Оставить заявку</a>
+</div></header>
+<main id="main-content">
+  <section class="hero container" aria-labelledby="hero-title"><div class="hero__content"><p class="eyebrow">Техника для вашего ритма</p><h1 class="hero__title" id="hero-title">Удобные технологии <span>на каждый день</span></h1><p class="hero__text">Наушники, аксессуары и умные устройства с понятным выбором и внимательным сервисом.</p><div class="hero__actions"><a class="button button--primary" href="catalog.html">Смотреть каталог <span aria-hidden="true">↗</span></a><a class="text-link" href="#advantages">Почему мы</a></div><ul class="hero__facts"><li><strong>500+</strong><span>товаров в каталоге</span></li><li><strong>1 год</strong><span>гарантии на технику</span></li><li><strong>Быстро</strong><span>ответим на заявку</span></li></ul></div><div class="hero__visual"><div class="hero__glow"></div><img class="hero__image" src="images/headphones.svg" alt="Наушники Sonic Pro"><div class="hero__note"><span class="hero__note-icon" aria-hidden="true">✦</span><span><strong>Подбор без сложностей</strong><small>Поможем выбрать подходящее</small></span></div></div></section>
+  <section class="section container" id="advantages" aria-labelledby="advantages-title"><div class="section-heading"><div><p class="eyebrow">Сервис и качество</p><h2 class="section-heading__title" id="advantages-title">Покупать легко</h2></div><p class="section-heading__text">Выбирайте технику с комфортом — мы позаботились о деталях.</p></div><div class="benefits-grid">
+    <article class="benefit-card"><span class="benefit-card__icon" aria-hidden="true">⌁</span><h3 class="benefit-card__title">Проверенные товары</h3><p class="benefit-card__text">Подбираем устройства с хорошими характеристиками и гарантией.</p></article>
+    <article class="benefit-card"><span class="benefit-card__icon" aria-hidden="true">◷</span><h3 class="benefit-card__title">Быстрый ответ</h3><p class="benefit-card__text">Оставьте заявку — поможем определиться и уточним наличие.</p></article>
+    <article class="benefit-card"><span class="benefit-card__icon" aria-hidden="true">✓</span><h3 class="benefit-card__title">Понятный выбор</h3><p class="benefit-card__text">В каталоге есть описания, цены и основные характеристики.</p></article>
+  </div></section>
+  <section class="section section--tinted" id="popular" aria-labelledby="popular-title"><div class="container"><div class="section-heading"><div><p class="eyebrow">Выбор покупателей</p><h2 class="section-heading__title" id="popular-title">Популярные товары</h2></div><a class="text-link" href="catalog.html">Весь каталог <span aria-hidden="true">→</span></a></div><div class="products-grid products-grid--featured"><article class="product-card">
+  <a class="product-card__visual" href="product.html" aria-label="Подробнее: Наушники Sonic Pro"><img class="product-card__image" src="images/headphones.svg" alt="Наушники Sonic Pro"><span class="product-card__badge">Хит продаж</span></a>
+  <div class="product-card__body"><p class="product-card__category">audio</p><h3 class="product-card__title"><a href="product.html">Наушники Sonic Pro</a></h3><p class="product-card__description">Чистый звук и удобная посадка на каждый день.</p>
+    <div class="product-card__bottom"><p class="product-card__price">8 490 ₽</p><button class="button button--small button--primary product-card__button" type="button" data-dialog-open data-product="Наушники Sonic Pro">Заказать</button></div>
+  </div>
+</article><article class="product-card">
+  <a class="product-card__visual" href="product.html" aria-label="Подробнее: Смарт-часы Pulse 2"><img class="product-card__image" src="images/watch.svg" alt="Смарт-часы Pulse 2"><span class="product-card__badge">Новинка</span></a>
+  <div class="product-card__body"><p class="product-card__category">wearables</p><h3 class="product-card__title"><a href="product.html">Смарт-часы Pulse 2</a></h3><p class="product-card__description">Контроль активности, уведомления и до 7 дней работы.</p>
+    <div class="product-card__bottom"><p class="product-card__price">6 990 ₽</p><button class="button button--small button--primary product-card__button" type="button" data-dialog-open data-product="Смарт-часы Pulse 2">Заказать</button></div>
+  </div>
+</article><article class="product-card">
+  <a class="product-card__visual" href="product.html" aria-label="Подробнее: Колонка SoundGo"><img class="product-card__image" src="images/speaker.svg" alt="Колонка SoundGo"><span class="product-card__badge">−15%</span></a>
+  <div class="product-card__body"><p class="product-card__category">audio</p><h3 class="product-card__title"><a href="product.html">Колонка SoundGo</a></h3><p class="product-card__description">Компактная колонка с насыщенным звучанием и защитой от брызг.</p>
+    <div class="product-card__bottom"><p class="product-card__price">3 990 ₽</p><button class="button button--small button--primary product-card__button" type="button" data-dialog-open data-product="Колонка SoundGo">Заказать</button></div>
+  </div>
+</article></div></div></section>
+  <section class="promo container"><div class="promo__content"><p class="eyebrow">Нужна помощь?</p><h2 class="promo__title">Подберём технику под ваши задачи</h2><p class="promo__text">Расскажите, что ищете, и мы предложим подходящие варианты.</p><a class="button button--light" href="order.html">Оставить заявку <span aria-hidden="true">↗</span></a></div><div class="promo__decoration" aria-hidden="true">Т</div></section>
+</main>
+<footer class="site-footer"><div class="container site-footer__inner">
+      <div><a class="site-logo site-logo--footer" href="index.html"><span class="site-logo__mark" aria-hidden="true">Т</span><span class="site-logo__text">Техно<span>Лавка</span></span></a><p class="site-footer__note">Техника, которая делает каждый день удобнее.</p></div>
+      <div class="site-footer__links"><a href="catalog.html">Каталог</a><a href="contacts.html">Контакты</a><a href="order.html">Оформить заявку</a></div>
+      <p class="site-footer__copy">© 2026 ТехноЛавка · Учебный проект Владимира Бережного</p>
+    </div></footer>
 <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
-    <h2 id="order-dialog-title">Оформление заявки</h2>
-
-    <form class="order-form" id="order-form" action="#" method="post" novalidate>
-
-        <input id="selected-product" name="selected-product" type="hidden">
-
-        <div class="form-field">
-            <label for="order-name">Имя</label>
-            <input
-                id="order-name"
-                name="name"
-                type="text"
-                placeholder="Введите ваше имя"
-                minlength="2"
-                autocomplete="given-name"
-                required
-            >
-        </div>
-
-        <div class="form-field">
-            <label for="order-email">E-mail</label>
-            <input
-                id="order-email"
-                name="email"
-                type="email"
-                placeholder="example@mail.ru"
-                autocomplete="email"
-                required
-            >
-        </div>
-
-        <div class="form-field">
-            <label for="order-phone">Телефон</label>
-            <input
-                id="order-phone"
-                name="phone"
-                type="tel"
-                inputmode="tel"
-                placeholder="+7 (900) 000-00-00"
-                pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
-                required
-            >
-            <small>Формат: +7 (900) 000-00-00</small>
-        </div>
-
-        <div class="form-field">
-            <label for="order-date">Дата связи</label>
-            <input
-                id="order-date"
-                name="date"
-                type="date"
-            >
-        </div>
-
-        <div class="form-field">
-            <label for="order-topic">Тема заявки</label>
-            <select id="order-topic" name="topic" required>
-                <option value="">Выберите тему</option>
-                <option value="product">Заказ товара</option>
-                <option value="consultation">Консультация</option>
-                <option value="delivery">Доставка</option>
-            </select>
-        </div>
-
-        <div class="form-field">
-            <label for="order-comment">Комментарий</label>
-            <textarea
-                id="order-comment"
-                name="comment"
-                rows="4"
-                placeholder="Укажите дополнительную информацию"
-            ></textarea>
-        </div>
-
-        <div class="form-field form-field--checkbox">
-            <label>
-                <input
-                    id="order-agreement"
-                    name="agreement"
-                    type="checkbox"
-                    required
-                >
-                Я согласен на обработку данных
-            </label>
-        </div>
-
-        <div class="form-actions">
-            <button type="button" id="close-order-dialog">Закрыть</button>
-            <button type="submit">Отправить заявку</button>
-        </div>
-
-    </form>
+  <div class="order-dialog__header"><p class="eyebrow">Быстрая заявка</p><h2 class="order-dialog__title" id="order-dialog-title">Оформить заказ</h2><button class="icon-button order-dialog__close" type="button" data-dialog-close aria-label="Закрыть окно">×</button></div>
+  <p class="order-dialog__intro">Оставьте контакты, и мы свяжемся с вами для подтверждения.</p>
+  <form class="order-form" id="order-form">
+    <input id="selected-product" name="product" type="hidden">
+    <div class="form-field"><label class="form-field__label" for="dialog-name">Имя</label><input class="form-field__control" id="dialog-name" name="name" type="text" minlength="2" autocomplete="name" placeholder="Как к вам обращаться?" required></div>
+    <div class="form-field"><label class="form-field__label" for="dialog-phone">Телефон</label><input class="form-field__control" id="dialog-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required><small class="form-field__hint">Формат: +7 (900) 000-00-00</small></div>
+    <label class="form-check"><input class="form-check__input" name="agreement" type="checkbox" required><span class="form-check__label">Согласен на обработку данных</span></label>
+    <div class="order-form__actions"><button class="button button--primary" type="submit">Отправить заявку</button><button class="button button--quiet" type="button" data-dialog-close>Отмена</button></div>
+  </form>
+  <p class="form-status" id="dialog-status" role="status" hidden>Заявка принята. Мы скоро свяжемся с вами.</p>
 </dialog>
-
-<p class="success-message" id="success-message" hidden>
-    Форма успешно отправлена!
-</p>
-<script src="js/main.js"></script>
 </body>
-
 </html>

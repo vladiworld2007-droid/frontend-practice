@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Оставьте заявку на товар в ТехноЛавке. Учебная форма с проверкой заполнения.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Оформление заявки — ТехноЛавка">
+  <meta property="og:description" content="Оставьте заявку на товар в ТехноЛавке. Учебная форма с проверкой заполнения.">
+  <meta property="og:url" content="https://vladiworld2007-droid.github.io/frontend-practice/order.html">
+  <meta property="og:image" content="https://vladiworld2007-droid.github.io/frontend-practice/images/og-cover.svg">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>Оформление заявки — ТехноЛавка</title>
+  <link rel="icon" href="images/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Перейти к содержимому</a>
+<header class="site-header"><div class="site-header__inner container">
+  <a class="site-logo" href="index.html" aria-label="ТехноЛавка — главная"><span class="site-logo__mark" aria-hidden="true">Т</span><span class="site-logo__text">Техно<span>Лавка</span></span></a>
+  <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярное</a></li><li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li><li class="site-nav__item"><a class="site-nav__link" href="pages/about.html">О магазине</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
+  <a class="button button--small button--primary site-header__action" href="order.html">Оставить заявку</a>
+</div></header>
+<main id="main-content">
+  <nav class="breadcrumbs container" aria-label="Хлебные крошки"><ol class="breadcrumbs__list"><li class="breadcrumbs__item"><a href="index.html">Главная</a></li><li class="breadcrumbs__item" aria-current="page">Оформление заявки</li></ol></nav>
+  <section class="page-intro container"><p class="eyebrow">Мы на связи</p><h1 class="page-intro__title">Оставить заявку</h1><p class="page-intro__text">Заполните форму — мы свяжемся с вами, чтобы уточнить детали заказа.</p></section>
+  <section class="order-page container"><div class="order-page__aside"><span class="order-page__icon" aria-hidden="true">✦</span><h2 class="order-page__aside-title">Поможем с выбором</h2><p>Укажите удобный способ связи и товар, который вас заинтересовал. Заявка учебная и никуда не отправляется.</p><a class="text-link" href="contacts.html">Контакты магазина →</a></div><form class="order-page-form" id="order-page-form"><div class="order-page-form__heading"><h2>Данные для связи</h2><p>Поля со звёздочкой обязательны.</p></div><div class="order-page-form__grid"><div class="form-field"><label class="form-field__label" for="order-name">Имя <span aria-hidden="true">*</span></label><input class="form-field__control" id="order-name" name="name" type="text" minlength="2" autocomplete="name" placeholder="Ваше имя" required></div><div class="form-field"><label class="form-field__label" for="order-phone">Телефон <span aria-hidden="true">*</span></label><input class="form-field__control" id="order-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d3\) \d3-\d2-\d2$" required></div><div class="form-field"><label class="form-field__label" for="order-email">Электронная почта</label><input class="form-field__control" id="order-email" name="email" type="email" autocomplete="email" placeholder="name@example.ru"></div><div class="form-field"><label class="form-field__label" for="order-product">Товар <span aria-hidden="true">*</span></label><select class="form-field__control" id="order-product" name="product" required><option value="">Выберите товар</option><option value="headphones">Наушники Sonic Pro</option><option value="watch">Смарт-часы Pulse 2</option><option value="speaker">Колонка SoundGo</option><option value="keyboard">Клавиатура MechType</option><option value="mouse">Мышь AirClick</option><option value="powerbank">Powerbank Volt 20K</option></select></div><div class="form-field order-page-form__wide"><label class="form-field__label" for="order-comment">Комментарий</label><textarea class="form-field__control form-field__control--textarea" id="order-comment" name="comment" rows="4" placeholder="Задайте вопрос или укажите удобное время для звонка"></textarea></div></div><label class="form-check"><input class="form-check__input" name="agreement" type="checkbox" required><span class="form-check__label">Согласен на обработку персональных данных <span aria-hidden="true">*</span></span></label><button class="button button--primary" type="submit">Отправить заявку</button><p class="form-status" id="order-page-status" role="status" tabindex="-1" hidden>Спасибо! Заявка заполнена. В этой учебной версии данные не отправляются.</p></form></section>
+</main>
+<footer class="site-footer"><div class="container site-footer__inner">
+      <div><a class="site-logo site-logo--footer" href="index.html"><span class="site-logo__mark" aria-hidden="true">Т</span><span class="site-logo__text">Техно<span>Лавка</span></span></a><p class="site-footer__note">Техника, которая делает каждый день удобнее.</p></div>
+      <div class="site-footer__links"><a href="catalog.html">Каталог</a><a href="contacts.html">Контакты</a><a href="order.html">Оформить заявку</a></div>
+      <p class="site-footer__copy">© 2026 ТехноЛавка · Учебный проект Владимира Бережного</p>
+    </div></footer>
+
+</body>
+</html>
