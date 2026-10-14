@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Каталог наушников, умных устройств и аксессуаров. Характеристики и цены товаров.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Каталог техники — ТехноЛавка">
+  <meta property="og:description" content="Каталог наушников, умных устройств и аксессуаров. Характеристики и цены товаров.">
+  <meta property="og:url" content="https://vladiworld2007-droid.github.io/frontend-practice/catalog.html">
+  <meta property="og:image" content="https://vladiworld2007-droid.github.io/frontend-practice/images/og-cover.svg">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>Каталог техники — ТехноЛавка</title>
+  <link rel="icon" href="images/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Перейти к содержимому</a>
+<header class="site-header"><div class="site-header__inner container">
+  <a class="site-logo" href="index.html" aria-label="ТехноЛавка — главная"><span class="site-logo__mark" aria-hidden="true">Т</span><span class="site-logo__text">Техно<span>Лавка</span></span></a>
+  <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярное</a></li><li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li><li class="site-nav__item"><a class="site-nav__link" href="pages/about.html">О магазине</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav>
+  <a class="button button--small button--primary site-header__action" href="order.html">Оставить заявку</a>
+</div></header>
+<main id="main-content">
+  <nav class="breadcrumbs container" aria-label="Хлебные крошки"><ol class="breadcrumbs__list"><li class="breadcrumbs__item"><a href="index.html">Главная</a></li><li class="breadcrumbs__item" aria-current="page">Каталог</li></ol></nav>
+  <section class="page-intro container"><p class="eyebrow">Выбирайте своё</p><h1 class="page-intro__title">Каталог техники</h1><p class="page-intro__text">Устройства для работы, учёбы и отдыха. Сравните варианты и оставьте заявку на понравившийся товар.</p></section>
+  <section class="container catalog-layout" aria-label="Товары каталога"><aside class="filter-panel"><p class="filter-panel__eyebrow">Подбор товара</p><h2 class="filter-panel__title">Фильтры</h2><form class="filter-form" action="#catalog-products" method="get"><div class="form-field"><label class="form-field__label" for="category-filter">Категория</label><select class="form-field__control" id="category-filter" name="category"><option>Все товары</option><option>Аудио</option><option>Носимые устройства</option><option>Аксессуары</option></select></div><fieldset class="filter-form__group"><legend class="form-field__label">Цена</legend><label class="form-field"><span class="visually-hidden">От, рублей</span><input class="form-field__control" type="number" min="0" placeholder="От"></label><label class="form-field"><span class="visually-hidden">До, рублей</span><input class="form-field__control" type="number" min="0" placeholder="До"></label></fieldset><fieldset class="filter-form__group"><legend class="form-field__label">Наличие</legend><label class="form-check"><input class="form-check__input" type="checkbox" name="available"><span class="form-check__label">Есть в наличии</span></label></fieldset><button class="button button--primary filter-form__submit" type="submit">Показать товары</button><p class="filter-panel__note">Фильтры представлены как учебный интерфейс.</p></form></aside><div class="catalog-results" id="catalog-products"><div class="catalog-results__top"><p>Найдено товаров: <strong>6</strong></p><label class="sort-control">Сортировка <select class="form-field__control" aria-label="Сортировка товаров"><option>Сначала популярные</option><option>Сначала дешевле</option><option>Сначала дороже</option></select></label></div><div class="products-grid"><article class="product-card">
+  <a class="product-card__visual" href="product.html" aria-label="Подробнее: Наушники Sonic Pro"><img class="product-card__image" src="images/headphones.svg" alt="Наушники Sonic Pro"><span class="product-card__badge">Хит продаж</span></a>
+  <div class="product-card__body"><p class="product-card__category">audio</p><h3 class="product-card__title"><a href="product.html">Наушники Sonic Pro</a></h3><p class="product-card__description">Чистый звук и удобная посадка на каждый день.</p>
+    <div class="product-card__bottom"><p class="product-card__price">8 490 ₽</p><button class="button button--small button--primary product-card__button" type="button" data-dialog-open data-product="Наушники Sonic Pro">Заказать</button></div>
+  </div>
+</article><article class="product-card">
+  <a class="product-card__visual" href="product.html" aria-label="Подробнее: Смарт-часы Pulse 2"><img class="product-card__image" src="images/watch.svg" alt="Смарт-часы Pulse 2"><span class="product-card__badge">Новинка</span></a>
+  <div class="product-card__body"><p class="product-card__category">wearables</p><h3 class="product-card__title"><a href="product.html">Смарт-часы Pulse 2</a></h3><p class="product-card__description">Контроль активности, уведомления и до 7 дней работы.</p>
+    <div class="product-card__bottom"><p class="product-card__price">6 990 ₽</p><button class="button button--small button--primary product-card__button" type="button" data-dialog-open data-product="Смарт-часы Pulse 2">Заказать</button></div>
+  </div>
+</article><article class="product-card">
+  <a class="product-card__visual" href="product.html" aria-label="Подробнее: Колонка SoundGo"><img class="product-card__image" src="images/speaker.svg" alt="Колонка SoundGo"><span class="product-card__badge">−15%</span></a>
+  <div class="product-card__body"><p class="product-card__category">audio</p><h3 class="product-card__title"><a href="product.html">Колонка SoundGo</a></h3><p class="product-card__description">Компактная колонка с насыщенным звучанием и защитой от брызг.</p>
+    <div class="product-card__bottom"><p class="product-card__price">3 990 ₽</p><button class="button button--small button--primary product-card__button" type="button" data-dialog-open data-product="Колонка SoundGo">Заказать</button></div>
+  </div>
+</article><article class="product-card">
+  <a class="product-card__visual" href="product.html" aria-label="Подробнее: Клавиатура MechType"><img class="product-card__image" src="images/keyboard.svg" alt="Клавиатура MechType"><span class="product-card__badge">Выбор дня</span></a>
+  <div class="product-card__body"><p class="product-card__category">accessories</p><h3 class="product-card__title"><a href="product.html">Клавиатура MechType</a></h3><p class="product-card__description">Механические переключатели и мягкая подсветка клавиш.</p>
+    <div class="product-card__bottom"><p class="product-card__price">5 890 ₽</p><button class="button button--small button--primary product-card__button" type="button" data-dialog-open data-product="Клавиатура MechType">Заказать</button></div>
+  </div>
+</article><article class="product-card">
+  <a class="product-card__visual" href="product.html" aria-label="Подробнее: Мышь AirClick"><img class="product-card__image" src="images/mouse.svg" alt="Мышь AirClick"></a>
+  <div class="product-card__body"><p class="product-card__category">accessories</p><h3 class="product-card__title"><a href="product.html">Мышь AirClick</a></h3><p class="product-card__description">Точная беспроводная мышь для работы и учёбы.</p>
+    <div class="product-card__bottom"><p class="product-card__price">2 590 ₽</p><button class="button button--small button--primary product-card__button" type="button" data-dialog-open data-product="Мышь AirClick">Заказать</button></div>
+  </div>
+</article><article class="product-card">
+  <a class="product-card__visual" href="product.html" aria-label="Подробнее: Powerbank Volt 20K"><img class="product-card__image" src="images/powerbank.svg" alt="Powerbank Volt 20K"></a>
+  <div class="product-card__body"><p class="product-card__category">accessories</p><h3 class="product-card__title"><a href="product.html">Powerbank Volt 20K</a></h3><p class="product-card__description">Большой запас энергии и быстрая зарядка устройств.</p>
+    <div class="product-card__bottom"><p class="product-card__price">3 290 ₽</p><button class="button button--small button--primary product-card__button" type="button" data-dialog-open data-product="Powerbank Volt 20K">Заказать</button></div>
+  </div>
+</article></div></div></section>
+</main>
+<footer class="site-footer"><div class="container site-footer__inner">
+      <div><a class="site-logo site-logo--footer" href="index.html"><span class="site-logo__mark" aria-hidden="true">Т</span><span class="site-logo__text">Техно<span>Лавка</span></span></a><p class="site-footer__note">Техника, которая делает каждый день удобнее.</p></div>
+      <div class="site-footer__links"><a href="catalog.html">Каталог</a><a href="contacts.html">Контакты</a><a href="order.html">Оформить заявку</a></div>
+      <p class="site-footer__copy">© 2026 ТехноЛавка · Учебный проект Владимира Бережного</p>
+    </div></footer>
+<dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+  <div class="order-dialog__header"><p class="eyebrow">Быстрая заявка</p><h2 class="order-dialog__title" id="order-dialog-title">Оформить заказ</h2><button class="icon-button order-dialog__close" type="button" data-dialog-close aria-label="Закрыть окно">×</button></div>
+  <p class="order-dialog__intro">Оставьте контакты, и мы свяжемся с вами для подтверждения.</p>
+  <form class="order-form" id="order-form">
+    <input id="selected-product" name="product" type="hidden">
+    <div class="form-field"><label class="form-field__label" for="dialog-name">Имя</label><input class="form-field__control" id="dialog-name" name="name" type="text" minlength="2" autocomplete="name" placeholder="Как к вам обращаться?" required></div>
+    <div class="form-field"><label class="form-field__label" for="dialog-phone">Телефон</label><input class="form-field__control" id="dialog-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required><small class="form-field__hint">Формат: +7 (900) 000-00-00</small></div>
+    <label class="form-check"><input class="form-check__input" name="agreement" type="checkbox" required><span class="form-check__label">Согласен на обработку данных</span></label>
+    <div class="order-form__actions"><button class="button button--primary" type="submit">Отправить заявку</button><button class="button button--quiet" type="button" data-dialog-close>Отмена</button></div>
+  </form>
+  <p class="form-status" id="dialog-status" role="status" hidden>Заявка принята. Мы скоро свяжемся с вами.</p>
+</dialog>
+</body>
+</html>

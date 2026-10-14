@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vladiworld2007-droid.github.io/frontend-practice/sitemap.xml
