@@ -24,7 +24,7 @@ const hasDiscount = product.discountPercent > 0;
 const isAffordable = getFinalPrice(product) <= 10000;
 const canOrder = product.isAvailable && product.price > 0;
 const isUnavailable = !product.isAvailable;
-console.group('ПР №15 — демонстрация JavaScript');
+console.group('Информация о товаре');
 console.table(product);
 console.log('Обычная цена:', formatPrice(product.price));
 console.log('Скидка:', formatPrice(calculateDiscount(product.price, product.discountPercent)));
@@ -51,6 +51,41 @@ document.querySelectorAll('[data-dialog-open]').forEach((button) => {
     if (!orderDialog) return;
     previousFocus = document.activeElement;
     if (selectedProduct) selectedProduct.value = button.dataset.product || '';
+    const chosen = (window.TECH_PRODUCTS || []).find(item => item.title === button.dataset.product);
+    let preview = orderDialog.querySelector('.dialog-product-preview');
+    if (!preview) {
+      preview = document.createElement('div');
+      preview.className = 'dialog-product-preview';
+      const intro = orderDialog.querySelector('.order-dialog__intro');
+      if (intro) intro.insertAdjacentElement('afterend', preview);
+      else orderDialog.querySelector('form')?.insertAdjacentElement('beforebegin', preview);
+    }
+    preview.replaceChildren();
+    if (chosen) {
+      const img = document.createElement('img');
+      const pathPrefix = window.location.pathname.includes('/pages/') ? '../' : '';
+      img.src = pathPrefix + chosen.image;
+      img.alt = chosen.title;
+      const info = document.createElement('div');
+      const heading = document.createElement('strong');
+      heading.textContent = chosen.title;
+      const description = document.createElement('p');
+      description.textContent = chosen.description;
+      const price = document.createElement('b');
+      price.textContent = formatPrice(chosen.price);
+      info.append(heading, description, price);
+      preview.append(img, info);
+      const calcButton = document.createElement('button');
+      calcButton.type = 'button';
+      calcButton.className = 'button button--outline dialog-calculator-button';
+      calcButton.textContent = 'Калькулятор стоимости';
+      calcButton.dataset.feature = 'calculator';
+      calcButton.dataset.productId = chosen.id;
+      preview.append(calcButton);
+      preview.hidden = false;
+    } else {
+      preview.hidden = true;
+    }
     if (dialogStatus) dialogStatus.hidden = true;
     if (dialogForm) dialogForm.hidden = false;
     orderDialog.showModal();
@@ -79,7 +114,7 @@ dialogForm?.addEventListener('submit', (event) => {
   dialogForm.hidden = true;
   if (dialogStatus) {
     dialogStatus.hidden = false;
-    dialogStatus.textContent = 'Демонстрационная заявка заполнена. Данные не отправляются.';
+    dialogStatus.textContent = 'Форма заполнена. Для продолжения оформления свяжитесь с нами через раздел «Контакты».';
   }
   window.setTimeout(() => {
     closeOrderDialog();
